@@ -54,4 +54,11 @@ nav { height: 90px;
     border:1px solid grey;
     background-color: lightgrey;
     box-shadow: inset 3px 3px 1px 1px white, inset -3px -3px 1px 1px #0000004b;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 3%;
+    
+    
 }
+
+#board .boxCell.click {background-color: rgb(100, 149, 237);}
