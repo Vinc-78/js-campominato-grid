@@ -7,9 +7,10 @@
 *
 */
 
-function disegnaCelle(livello) {
+function numeroDiCelle(livello) {
 
     let elementi;
+    livello=parseInt(livello);
     
 if( livello===1) {elementi=100;}
 else if (livello===2) {elementi=81;}
@@ -45,12 +46,13 @@ function generaGriglia(NumeroCelle) {
         //const cell = `<div class='box' style='width: ${cellSize}%; height: ${cellSize}%'></div>`;
         const cella = document.createElement("div");
         cella.classList.add("boxCell");
+        cella.innerHTML=i+1; 
         cella.style.width = DimensioneCelle + "%";
         cella.style.height = DimensioneCelle + "%";
         cella.addEventListener("click", cliccaSuCella);
 
-        // Aggiungo la cella al boardContainer
-        //boardContainer.innerHTML += cell;
+        // Aggiungo le celle alla board
+       
         board.append(cella);
     }
 
